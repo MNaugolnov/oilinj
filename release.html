@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Последняя версия v.0.31 · Нефтяной инжиниринг</title>
-<meta name="description" content="Надстройка «Нефтяной инжиниринг» v.0.31: скачать, установка, изменения">
+<title>Последняя версия v.0.32 · Нефтяной инжиниринг</title>
+<meta name="description" content="Надстройка «Нефтяной инжиниринг» v.0.32: скачать и установить">
 <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
 <meta name="theme-color" content="#0b1220">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
       <a href="release.html" class="active">Последняя версия</a>
     </nav>
     <div class="nav-cta">
-      <a href="release.html#download" class="btn btn-hot btn-sm btn-sm-hide"><span data-icon="download"></span>Скачать v.0.31</a>
+      <a href="release.html#download" class="btn btn-hot btn-sm btn-sm-hide"><span data-icon="download"></span>Скачать v.0.32</a>
       <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false"><span data-icon="menu" style="width:20px;height:20px;display:block"></span></button>
     </div>
   </div>
@@ -31,24 +31,25 @@
 <section class="page-hero" style="padding-bottom:96px">
   <div class="container">
     <div class="crumb"><a href="index.html">Главная</a><span>›</span><span>Последняя версия</span></div>
-    <h1>Нефтяной инжиниринг v.0.31</h1>
-    <p>Выпуск от 26.09.2026: ревизия исходного кода надстройки oilinj (сборка 24.01.2020). Исправлены ошибки компиляции и расчётных формул, обновлена лента, добавлены функции ОФП по капиллярному давлению и окно «О программе».</p>
+    <h1>Нефтяной инжиниринг v.0.32</h1>
+    <p>Excel-надстройка с расчётными функциями для инженеров по разработке месторождений: дебит скважин, прогноз и анализ добычи, газовые расчёты, PVT-корреляции и ОФП.</p>
   </div>
 </section>
 <div class="container" id="download">
   <div class="dl-card">
     <div class="file-ic">XLAM</div>
-    <div><h2>oilinj2026.xlam</h2><div class="meta"><span>Версия <code>0.31</code></span><span>26.09.2026</span><span>555 КБ</span><span>Excel для Windows, 2010 и новее</span></div></div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-hot" href="downloads/oilinj2026.xlam" download><span data-icon="download"></span>Скачать</a><a class="btn btn-outline" href="downloads/oilinj2026_changelog.txt">Changelog (.txt)</a></div>
+    <div><h2>oilinj.xlam</h2><div class="meta"><span>Версия <code>0.32</code></span><span>251 КБ</span><span>Excel для Windows, 2010 и новее</span></div></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-hot" href="downloads/oilinj.xlam" download><span data-icon="download"></span>Скачать</a></div>
   </div>
 </div>
 
-<section id="important" class="tight">
+<section class="tight">
   <div class="container">
-    <div class="callout warn"><b>Перед переходом со старой версии.</b> Изменены сигнатуры двух функций — формулы с ними в старых книгах нужно поправить:
-      <a class="fnref" href="docs/f/PI_Batler_HW_Oilinj.html" style="font-family:JetBrains Mono,monospace">PI_Batler_HW_Oilinj</a> получила аргумент <code>re</code> (радиус дренирования) перед <code>rw</code>;
-      <a href="docs/f/OFPHong2.html" style="font-family:JetBrains Mono,monospace">OFPHong2</a> — аргумент <code>Swc</code>: <code>(Sg; Sgc; Swc; Sorg; krog)</code>.</div>
-    <div class="callout info">Кэш скомпилированного кода удалён: при первом открытии Excel перекомпилирует проект. Рекомендуется открыть надстройку, выполнить <kbd>Alt</kbd>+<kbd>F11</kbd> › Debug › Compile VBAProject и сохранить.</div>
+    <div class="rel-block"><h3>О выпуске</h3><ul class="items">
+      <li>Вкладка на ленте Excel — «Нефтяной инжиниринг v.0.32»: 113 функций в 8 разделах, конвертер единиц и вспомогательные инструменты.</li>
+      <li>Описание каждой функции и её аргументов — в <a href="docs/index.html" style="color:var(--acc-700);font-weight:700">справочнике</a> и в Мастере функций Excel.</li>
+      <li>Свидетельство о государственной регистрации программы для ЭВМ № 2018660112 (дата регистрации в Реестре программ для ЭВМ 16.08.2018). Авторы: Наугольнов М.В., Большаков М.С.</li>
+    </ul></div>
   </div>
 </section>
 
@@ -57,33 +58,20 @@
     <div>
       <div class="section-head" style="margin-bottom:24px"><span class="kicker">Установка</span><h2>Подключение надстройки</h2></div>
       <ol class="steps">
-        <li>Скачайте <b>oilinj2026.xlam</b> и сохраните в постоянную папку (например, <code>%AppData%\Microsoft\AddIns</code>).</li>
+        <li>Скачайте <b>oilinj.xlam</b> и сохраните в постоянную папку (например, <code>%AppData%\Microsoft\AddIns</code>).</li>
         <li>Если файл скачан из интернета: свойства файла › отметьте «Разблокировать».</li>
         <li>Excel › Файл › Параметры › Надстройки › Управление: «Надстройки Excel» › <b>Перейти</b> › <b>Обзор</b> › выберите файл.</li>
-        <li>Убедитесь, что галочка у надстройки стоит, и нажмите ОК. На ленте появится вкладка <b>«Нефтяной инжиниринг v.0.31»</b>.</li>
+        <li>Убедитесь, что галочка у надстройки стоит, и нажмите ОК. На ленте появится вкладка <b>«Нефтяной инжиниринг v.0.32»</b>.</li>
         <li>Если вкладки нет — проверьте Центр управления безопасностью › Параметры макросов.</li>
-        <li>При обновлении со старой версии отключите прежний oilinj.xlam, чтобы функции с одинаковыми именами не конфликтовали.</li>
+        <li>При обновлении отключите прежнюю версию надстройки, чтобы функции с одинаковыми именами не конфликтовали.</li>
       </ol>
+      <div class="callout info">При первом открытии Excel компилирует проект надстройки. Если появится ошибка — откройте редактор VBA (<kbd>Alt</kbd>+<kbd>F11</kbd>) › Debug › Compile VBAProject и сохраните.</div>
     </div>
     <div class="rel-block"><h3>Проверка после установки</h3><ul class="items">
       <li>В любой ячейке введите <code>=PI_Dupui_Oilinj(</code> и нажмите <kbd>Ctrl</kbd>+<kbd>A</kbd> — откроется Мастер функций с описанием аргументов.</li>
-      <li>Кнопка «О программе» на ленте должна показывать версию 0.31.</li>
+      <li>Кнопка «О программе» на ленте показывает версию 0.32.</li>
       <li>Функции также доступны в категории «Определённые пользователем».</li>
     </ul><p style="margin-top:16px"><a class="btn btn-dark btn-sm" href="docs/index.html"><span data-icon="book"></span>Перейти в справочник</a></p></div>
-  </div>
-</section>
-
-<section id="changes">
-  <div class="container">
-    <div class="section-head"><span class="kicker">Что нового</span><h2>Изменения относительно сборки 24.01.2020</h2><p>Имена функций — ссылки на их страницы в справочнике. В справочнике такие функции отмечены красной точкой.</p></div>
-    <div class="rel-list"><div class="rel-block reveal"><h3><span class="badge badge-new">Версия 0.31</span></h3><ul class="items"><li>Лента: удалена группа &quot;Насосы&quot;; новая иконка кнопки &quot;Разное&quot; в цветах надстройки; вкладка &quot;Нефтяной инжиниринг v.0.31&quot;.</li><li>Под кнопкой почты добавлена кнопка &quot;О программе&quot; (форма frmAbout): версия 0.31, контакт naugolnov.mv@gazprom-neft.ru (ссылка открывает новое письмо), 2016-2019, 2026.</li><li>Кнопка почты: адрес naugolnov.mv@gazprom-neft.ru, тема &quot;Нефтяной инжиниринг v.0.31&quot;.</li></ul></div><div class="rel-block reveal"><h3><span class="badge badge-new">Добавлено</span></h3><ul class="items"><li>Функции ОФП по капиллярному давлению (Brooks-Corey) из версии Габитовой С.И. (07.10.2019): <a class="fnref" href="docs/f/pc_krw.html">pc_krw</a>, <a class="fnref" href="docs/f/pc_krnw.html">pc_krnw</a>, <a class="fnref" href="docs/f/pc_kro.html">pc_kro</a> + кнопки меню &quot;ОФП по капиллярному давлению&quot; и описания аргументов. В <a class="fnref" href="docs/f/pc_krw.html">pc_krw</a> исправлен показатель степени: (2+3λ)/λ вместо (2+λ)/λ.</li></ul></div><div class="rel-block reveal"><h3><span class="badge badge-fix">Расчётные функции</span></h3><h4>Модуль Oil_Well_Rates</h4><ul class="items"><li><a class="fnref" href="docs/f/PI_Batler_HW_Oilinj.html">PI_Batler_HW_Oilinj</a>: добавлен аргумент re (радиус дренирования) ПЕРЕД rw: (k, B, mu, Aniz, h, l, re, rw, Skin). Проверка l = 0 до деления.</li><li><a class="fnref" href="docs/f/PI_Joshy_HW_Oilinj.html">PI_Joshy_HW_Oilinj</a>: анизотропия beta = sqrt(1/Aniz) (Aniz = kv/kh), beta под логарифмом.</li><li><a class="fnref" href="docs/f/PI_Li_HW_Frac_no_influx_Oilinj.html">PI_Li_HW_Frac_no_influx_Oilinj</a>: L_f2 -&gt; Lf_2; Log(h/(2*r_w)).</li><li><a class="fnref" href="docs/f/Vogel.html">Vogel</a> для ГС: кривая Чена нормирована (f(0)=1, f(1)=0) и согласована по производной — нет разрыва при Pзаб = Pнас.</li></ul><h4>Модуль Gas</h4><ul class="items"><li><a class="fnref" href="docs/f/Gas_Tkr.html">Gas_Tkr</a>: Tкр n-бутана 425.12 K; <a class="fnref" href="docs/f/Gas_Tkr.html">Gas_Tkr</a>/<a class="fnref" href="docs/f/Gas_Pkr.html">Gas_Pkr</a>: сумма долей сравнивается с 100 с допуском 0.01.</li><li>my(): температура в °C в формуле вязкости при низком давлении.</li><li><a class="fnref" href="docs/f/Q_gas_Dipiu_Oilinj.html">Q_gas_Dipiu_Oilinj</a>, <a class="fnref" href="docs/f/Q_gas_Joshy_Oilinj.html">Q_gas_Joshy_Oilinj</a>: ата -&gt; Па (x98066.5), Pст = 101325 Па, pi точно.</li><li><a class="fnref" href="docs/f/Q_gas_Joshy_Oilinj.html">Q_gas_Joshy_Oilinj</a>: полуось эллипса дренирования считается по длине ствола l.</li></ul><h4>Модуль PVT</h4><ul class="items"><li><a class="fnref" href="docs/f/RsKarto.html">RsKarto</a>: результат в м3/м3 (x0.1781); во 2-й ветке temp вместо Tres.</li><li><a class="fnref" href="docs/f/RsClaso.html">RsClaso</a>: показатели температуры согласованы с <a class="fnref" href="docs/f/PsatClaso.html">PsatClaso</a> (0.172 средняя / 0.13 лёгкая).</li><li><a class="fnref" href="docs/f/BoilAl.html">BoilAl</a>: gamma_oil^-1.20204, Rs^0.74239.</li><li><a class="fnref" href="docs/f/Visco1Stan.html">Visco1Stan</a>: (1.8*temp - 520).</li><li><a class="fnref" href="docs/f/CoilLabedi.html">CoilLabedi</a>: множитель 145.041 применяется ко всему выражению.</li><li><a class="fnref" href="docs/f/CorNewmancompr_csandst.html">CorNewmancompr_csandst</a>: коэффициент 97.32e-6 (было 97320000).</li><li><a class="fnref" href="docs/f/PsatStand_Mod.html">PsatStand_Mod</a>, <a class="fnref" href="docs/f/RsStand_mod.html">RsStand_mod</a>: для 0.85&lt;γo&lt;0.9 — оригинальный Standing (раньше 0); <a class="fnref" href="docs/f/Visco1Egbo.html">Visco1Egbo</a>: для 0.85&lt;γo&lt;0.9 — оригинальная Egbogah-Jack.</li></ul><h4>Модуль GPNPVT</h4><ul class="items"><li><a class="fnref" href="docs/f/DensWGPN.html">DensWGPN</a>: учитывается растворённый газ (Rsw_scfstb).</li><li><a class="fnref" href="docs/f/CoilGPN.html">CoilGPN</a> ниже Pнас: co = -1/Bo·dBo/dp + Bg/Bo·dRs/dp (без лишнего /5.615).</li><li><a class="fnref" href="docs/f/ZFactorDranchuk.html">ZFactorDranchuk</a>: точность бисекции 1e-7 (была 1e-3).</li></ul><h4>Модуль OFP</h4><ul class="items"><li><a class="fnref" href="docs/f/OFPLetO.html">OFPLetO</a>: Eoil*Swn^Toil.</li><li><a class="fnref" href="docs/f/OFPHong2.html">OFPHong2</a>: добавлен аргумент Swc: (Sg, Sgc, Swc, Sorg, krog).</li><li><a class="fnref" href="docs/f/OFPHonog1.html">OFPHonog1</a>/<a class="fnref" href="docs/f/OFPHonog2.html">OFPHonog2</a>: So = 1 - Sg - Swc.</li></ul><h4>Модуль Prod_Prediction</h4><ul class="items"><li><a class="fnref" href="docs/f/FQ_Plato.html">FQ_Plato</a>: P + (1-P)*exp(-d*t).</li><li><a class="fnref" href="docs/f/FW_Frencinst.html">FW_Frencinst</a>: Qw вместо неопределённой W.</li></ul><h4>Модуль analysis</h4><ul class="items"><li><a class="fnref" href="docs/f/FA_dF2_a.html">FA_dF2_a</a>/b/c (модель a*b/c): точные формулы интегрального метода; сумма факторов равна изменению a*b/c.</li></ul><h4>Модуль Other</h4><ul class="items"><li><a class="fnref" href="docs/f/IFM.html">IFM</a>, <a class="fnref" href="docs/f/IFM2.html">IFM2</a>: минимум только среди строк, удовлетворяющих условиям; <a class="fnref" href="docs/f/IFM2.html">IFM2</a> возвращает результат.</li><li><a class="fnref" href="docs/f/MVPR.html">MVPR</a>: для массивов поиск в SearchColumnNum.</li></ul></div><div class="rel-block reveal"><h3><span class="badge badge-fix">Ошибки компиляции</span></h3><ul class="items"><li>PVT: <a class="fnref" href="docs/f/CorNewmancompr_limest.html">CorNewmancompr_limest</a> (лишний End Function); <a class="fnref" href="docs/f/ViscoDeGheto.html">ViscoDeGheto</a>, <a class="fnref" href="docs/f/ViscoAl.html">ViscoAl</a>, <a class="fnref" href="docs/f/ViscoBeal.html">ViscoBeal</a>, <a class="fnref" href="docs/f/ViscoBergman.html">ViscoBergman</a> (недостающие End If). Модуль PVT снова компилируется.</li><li>Prod_Prediction: Ln() -&gt; Log() в <a class="fnref" href="docs/f/FW_Sazon.html">FW_Sazon</a> и <a class="fnref" href="docs/f/FW_arps.html">FW_arps</a>.</li><li>Func_description.call_func: убраны вызовы несуществующих процедур; Visco11Kart -&gt; <a class="fnref" href="docs/f/Visco1Kart.html">Visco1Kart</a>.</li></ul></div><div class="rel-block reveal"><h3><span class="badge badge-fix">Лента</span></h3><ul class="items"><li>customUI.xml (Office 2007) приведён к актуальной customUI14.xml — нет ссылок на отсутствующие макросы. Подпись вкладки: &quot;Нефтяной инжиниринг v.2026&quot;.</li></ul></div><div class="rel-block reveal"><h3><span class="badge badge-fix">Конвертер единиц</span></h3><ul class="items"><li>Пересчёт переписан через коэффициенты к базовой единице СИ. Исправлены: галлон (США), кубический дюйм/ярд/миля, баррель, стокс, мм рт. ст., миля-&gt;ярд, дюйм-&gt;фут, ккал, кВт·ч, т н.э., фунт-&gt;тонна, неделя, °C&lt;-&gt;°R/K (273.15), приставки СИ.</li></ul></div><div class="rel-block reveal"><h3><span class="badge badge-fix">Исправление сборки</span></h3><ul class="items"><li>В первой сборке исходный текст модулей PVT, OFP, Prod_Prediction, Func_description, u7_const был упакован так, что Excel читал его не полностью (модули обрезались и не компилировались). Упаковка исправлена; проект проверен в Excel: Debug -&gt; Compile VBAProject проходит без ошибок, функции считаются.</li></ul></div><div class="rel-block reveal"><h3><span class="badge badge-off">Удалено</span></h3><ul class="items"><li>UserForm1 (старый конвертер) и процедура Form_Load0.</li><li>Module1 (мёртвый код с ошибкой компиляции).</li><li>Дублирующая call_func в ЭтаКнига.</li><li>Описания несуществующих функций УЭЦН/двигателя (Motor*, ESP*) в Func_description.</li><li>Кнопки/макросы для несуществующих функций: CorNewmancompr_uncsandst, Gas_rokr, UNIFLOW (fail).</li></ul></div></div>
-  </div>
-</section>
-
-<section id="archive" class="on-paper-dim">
-  <div class="container">
-    <div class="section-head"><span class="kicker">Архив версий</span><h2>История выпусков</h2><p>Предыдущие сборки хранятся в папке «Архив версий» и не публикуются для скачивания.</p></div>
-    <div class="table-wrap"><table><thead><tr><th>Дата</th><th>Версия</th></tr></thead><tbody><tr><td>26.09.2026</td><td>oilinj2026 v.0.31 — текущая</td></tr><tr><td>24.01.2020</td><td>oilinj — исходная сборка для v.0.31</td></tr><tr><td>07.10.2019</td><td>oilinj (Габитова): ОФП по капиллярному давлению</td></tr><tr><td>27.03.2019</td><td>oilinj v1 — last version</td></tr><tr><td>12.12.2018</td><td>oilinj v0.3</td></tr><tr><td>01.11.2018</td><td>oilinj v0.2.1 (с модулем УЭЦН)</td></tr><tr><td>27.04.2018</td><td>oilinj v_X</td></tr><tr><td>26.02.2018</td><td>oilinj v14_1</td></tr><tr><td>25.01.2018</td><td>oilinj v14</td></tr><tr><td>13.01.2017</td><td>oilinj v13</td></tr><tr><td>16.09.2016</td><td>oilinj v12</td></tr><tr><td>01.09.2016</td><td>oilinj v11</td></tr><tr><td>04.08.2016</td><td>oilinj v10</td></tr><tr><td>16.06.2016</td><td>oilinj v9</td></tr><tr><td>14.06.2016</td><td>oilinj v8</td></tr><tr><td>04.04.2016</td><td>oilinj v7</td></tr><tr><td>22.03.2016</td><td>oilinj v6</td></tr><tr><td>05.02.2016</td><td>oilinj v5</td></tr><tr><td>02.02.2016</td><td>oilinj v4</td></tr><tr><td>01.02.2016</td><td>oilinj vOleg</td></tr><tr><td>26.01.2016</td><td>oilinj v3</td></tr><tr><td>25.01.2016</td><td>oilinj v1, v2</td></tr><tr><td>21.01.2016</td><td>oilinj v0</td></tr></tbody></table></div>
   </div>
 </section>
 <footer>
@@ -95,14 +83,12 @@
       </div>
       <div class="footer-col"><h5>Справочник</h5><ul><li><a href="docs/index.html#m-rates">Дебит скважины</a></li><li><a href="docs/index.html#m-forecast">Прогноз добычи</a></li><li><a href="docs/index.html#m-analysis">Анализ добычи</a></li><li><a href="docs/index.html#m-gas">Газовый калькулятор</a></li><li><a href="docs/index.html#m-pvt">PVT-корреляции</a></li><li><a href="docs/index.html#m-ofp">Модели и корреляции ОФП</a></li><li><a href="docs/tools.html">Инструменты на ленте</a></li></ul></div>
       <div class="footer-col"><h5>Надстройка</h5><ul>
-        <li><a href="release.html">Последняя версия v.0.31</a></li>
+        <li><a href="release.html">Последняя версия v.0.32</a></li>
         <li><a href="release.html#install">Установка</a></li>
-        <li><a href="release.html#changes">Что нового</a></li>
-        <li><a href="release.html#archive">Архив версий</a></li>
-        <li><a href="mailto:naugolnov.mv@gazprom-neft.ru?subject=%D0%9D%D0%B5%D1%84%D1%82%D1%8F%D0%BD%D0%BE%D0%B9%20%D0%B8%D0%BD%D0%B6%D0%B8%D0%BD%D0%B8%D1%80%D0%B8%D0%BD%D0%B3%20v.0.31">Написать разработчику</a></li>
+        <li><a href="mailto:naugolnov.mv@gazprom-neft.ru?subject=%D0%9D%D0%B5%D1%84%D1%82%D1%8F%D0%BD%D0%BE%D0%B9%20%D0%B8%D0%BD%D0%B6%D0%B8%D0%BD%D0%B8%D1%80%D0%B8%D0%BD%D0%B3%20v.0.32">Написать разработчику</a></li>
       </ul></div>
     </div>
-    <div class="footer-bottom"><span>© 2016–2019, 2026 · Нефтяной инжиниринг · Михаил Наугольнов</span><span>Надстройка oilinj2026.xlam · v.0.31 от 26.09.2026</span></div>
+    <div class="footer-bottom"><span>© 2016–2019 · Нефтяной инжиниринг · Наугольнов М.В., Большаков М.С.</span><span>Свидетельство о регистрации программы для ЭВМ № 2018660112 · oilinj.xlam v.0.32</span></div>
   </div>
 </footer>
 <script src="assets/js/main.js"></script>
