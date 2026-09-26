@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ViscoBeal — Beal газонасыщенной/дегазированной/недонасыщенной нефти · Нефтяной инжиниринг</title>
+<meta name="description" content="Корреляция Beal для вязкости газонасыщенной/дегазированной/недонасыщенной нефти, мПа*с">
+<link rel="icon" href="../../assets/img/logo-mark.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b1220">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/docs.css">
+</head>
+<body class="docs-page">
+<header class="nav is-light">
+  <div class="nav-inner">
+    <a href="../../index.html" class="brand"><img src="../../assets/img/logo-mark.svg" alt=""><span class="brand-word">Reservoir<b>Engineering</b>Lab</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../../index.html">Главная</a>
+      <a href="../../docs/index.html" class="active">Справочник функций</a>
+      <a href="../../release.html">Последняя версия</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../../release.html#download" class="btn btn-hot btn-sm btn-sm-hide"><span data-icon="download"></span>Скачать v.0.31</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false"><span data-icon="menu" style="width:20px;height:20px;display:block"></span></button>
+    </div>
+  </div>
+</header>
+<div class="docs-wrap"><button class="side-toggle" id="sideToggle" aria-expanded="false">☰ Разделы справочника</button><aside class="docs-side" id="docsSide">
+<div class="side-search"><input type="search" id="sideFilter" placeholder="Найти функцию…" aria-label="Найти функцию"></div>
+<a class="side-top" href="../../docs/index.html">Обзор справочника</a>
+<a class="side-top" href="../../docs/tools.html">Инструменты на ленте</a>
+<a class="side-top" href="../../release.html">Последняя версия v.0.31</a>
+<details class="side-mod"><summary><span class="side-n">1</span>Дебит скважины</summary>
+<div class="side-sec">Дебит жидкости</div>
+<a class="side-fn" href="../../docs/f/PI_Dupui_Oilinj.html" data-k="pi_dupui_oilinj продуктивность по дюпюи дебит жидкости" title="PI_Dupui_Oilinj">Продуктивность по Дюпюи</a>
+<a class="side-fn" href="../../docs/f/PI_Batler_HW_Oilinj.html" data-k="pi_batler_hw_oilinj продуктивность по батлеру для гс дебит жидкости" title="PI_Batler_HW_Oilinj">Продуктивность по Батлеру для ГС</a>
+<a class="side-fn" href="../../docs/f/PI_Joshy_HW_Oilinj.html" data-k="pi_joshy_hw_oilinj продуктивность по джоши для гс дебит жидкости" title="PI_Joshy_HW_Oilinj">Продуктивность по Джоши для ГС</a>
+<a class="side-fn" href="../../docs/f/PI_Oscan_Raghavan_Oilinj.html" data-k="pi_oscan_raghavan_oilinj продуктивность по озкану-рагхавану для гс с мгрп дебит жидкости" title="PI_Oscan_Raghavan_Oilinj">Продуктивность по Озкану-Рагхавану для ГС с МГРП</a>
+<a class="side-fn" href="../../docs/f/PI_Li_HW_Frac_no_influx_Oilinj.html" data-k="pi_li_hw_frac_no_influx_oilinj продуктивность по ли для гс с грп без учета притока непосредственно в ствол скважины дебит жидкости" title="PI_Li_HW_Frac_no_influx_Oilinj">Продуктивность по Ли для ГС с ГРП без учета притока непосредственно в ствол скважины</a>
+<a class="side-fn" href="../../docs/f/PI_Li_HW_Frac_with_influx_Oilinj.html" data-k="pi_li_hw_frac_with_influx_oilinj продуктивность по ли для гс с грп с учетом притока непосредственно в ствол скважины дебит жидкости" title="PI_Li_HW_Frac_with_influx_Oilinj">Продуктивность по Ли для ГС с ГРП с учетом притока непосредственно в ствол скважины</a>
+<div class="side-sec">Вне ленты — через Мастер функций</div>
+<a class="side-fn" href="../../docs/f/Vogel.html" data-k="vogel дебит по вогелю (композитная ipr) вне ленты — через мастер функций" title="Vogel">Дебит по Вогелю (композитная IPR)</a>
+</details>
+<details class="side-mod"><summary><span class="side-n">2</span>Прогноз добычи</summary>
+<div class="side-sec">Прогноз жидкости</div>
+<a class="side-fn" href="../../docs/f/FQ_Arps.html" data-k="fq_arps уравнение арпса прогноз жидкости" title="FQ_Arps">Уравнение Арпса</a>
+<a class="side-fn" href="../../docs/f/FQ_Arps2.html" data-k="fq_arps2 уравнение двойного арпса прогноз жидкости" title="FQ_Arps2">Уравнение двойного Арпса</a>
+<a class="side-fn" href="../../docs/f/FQ_Pow.html" data-k="fq_pow степенная функция прогноз жидкости" title="FQ_Pow">Степенная функция</a>
+<a class="side-fn" href="../../docs/f/FQ_PowArps.html" data-k="fq_powarps степенная функция + уравнение арпса прогноз жидкости" title="FQ_PowArps">Степенная функция + Уравнение Арпса</a>
+<a class="side-fn" href="../../docs/f/FQ_Exp.html" data-k="fq_exp экспоненциальная функция прогноз жидкости" title="FQ_Exp">Экспоненциальная функция</a>
+<a class="side-fn" href="../../docs/f/FQ_Plato.html" data-k="fq_plato плато (полка) прогноз жидкости" title="FQ_Plato">Плато (полка)</a>
+<a class="side-fn" href="../../docs/f/FQ_Line.html" data-k="fq_line линейная функция прогноз жидкости" title="FQ_Line">Линейная функция</a>
+<div class="side-sec">Прогноз обводненности › на основе методов Сипачева, Назарова</div>
+<a class="side-fn" href="../../docs/f/FW_SipPos.html" data-k="fw_sippos сипачева-посевича прогноз обводненности › на основе методов сипачева, назарова" title="FW_SipPos">Сипачева-Посевича</a>
+<a class="side-fn" href="../../docs/f/FW_NazarSip.html" data-k="fw_nazarsip назарова-сипачева прогноз обводненности › на основе методов сипачева, назарова" title="FW_NazarSip">Назарова-Сипачева</a>
+<a class="side-fn" href="../../docs/f/FW_Frencinst.html" data-k="fw_frencinst французского института прогноз обводненности › на основе методов сипачева, назарова" title="FW_Frencinst">Французского института</a>
+<a class="side-fn" href="../../docs/f/FW_OstrDzhap.html" data-k="fw_ostrdzhap островского-джапарова прогноз обводненности › на основе методов сипачева, назарова" title="FW_OstrDzhap">Островского-Джапарова</a>
+<a class="side-fn" href="../../docs/f/FW_GaisTim.html" data-k="fw_gaistim гайсина-тимашова прогноз обводненности › на основе методов сипачева, назарова" title="FW_GaisTim">Гайсина-Тимашова</a>
+<a class="side-fn" href="../../docs/f/FW_Gaisin.html" data-k="fw_gaisin гайсина прогноз обводненности › на основе методов сипачева, назарова" title="FW_Gaisin">Гайсина</a>
+<div class="side-sec">Прогноз обводненности › на основе метода Максимова</div>
+<a class="side-fn" href="../../docs/f/FW_Sazon.html" data-k="fw_sazon сазонова прогноз обводненности › на основе метода максимова" title="FW_Sazon">Сазонова</a>
+<div class="side-sec">Прогноз обводненности › на основе метода Пирвердяна</div>
+<a class="side-fn" href="../../docs/f/FW_const.html" data-k="fw_const постоянного нефтесодержания прогноз обводненности › на основе метода пирвердяна" title="FW_const">Постоянного нефтесодержания</a>
+<a class="side-fn" href="../../docs/f/FW_Pirverd.html" data-k="fw_pirverd пирвердяна прогноз обводненности › на основе метода пирвердяна" title="FW_Pirverd">Пирвердяна</a>
+<a class="side-fn" href="../../docs/f/FW_Kamb.html" data-k="fw_kamb камбарова прогноз обводненности › на основе метода пирвердяна" title="FW_Kamb">Камбарова</a>
+<div class="side-sec">Прогноз обводненности › на основе метода Абызбаева</div>
+<a class="side-fn" href="../../docs/f/FW_Abyzb.html" data-k="fw_abyzb абызбаева прогноз обводненности › на основе метода абызбаева" title="FW_Abyzb">Абызбаева</a>
+<div class="side-sec">Вне ленты — через Мастер функций</div>
+<a class="side-fn" href="../../docs/f/FW_arps.html" data-k="fw_arps арпса (характеристика вытеснения) вне ленты — через мастер функций" title="FW_arps">Арпса (характеристика вытеснения)</a>
+<a class="side-fn" href="../../docs/f/FW_o_Kamb.html" data-k="fw_o_kamb камбарова — обратная задача вне ленты — через мастер функций" title="FW_o_Kamb">Камбарова — обратная задача</a>
+<a class="side-fn" href="../../docs/f/FW_o_Sazon.html" data-k="fw_o_sazon сазонова — обратная задача вне ленты — через мастер функций" title="FW_o_Sazon">Сазонова — обратная задача</a>
+</details>
+<details class="side-mod"><summary><span class="side-n">3</span>Анализ добычи</summary>
+<div class="side-sec">Потери добычи по факторам:</div>
+<a class="side-fn" href="../../docs/f/FA_dLiq.html" data-k="fa_dliq по изменению дебита жидкости потери добычи по факторам:" title="FA_dLiq">По изменению дебита жидкости</a>
+<a class="side-fn" href="../../docs/f/FA_dWC.html" data-k="fa_dwc по изменению обводнённости потери добычи по факторам:" title="FA_dWC">По изменению обводнённости</a>
+<a class="side-fn" href="../../docs/f/FA_dPres.html" data-k="fa_dpres по изменению пластового давления потери добычи по факторам:" title="FA_dPres">По изменению пластового давления</a>
+<a class="side-fn" href="../../docs/f/FA_dBHP.html" data-k="fa_dbhp по изменению забойного давления потери добычи по факторам:" title="FA_dBHP">По изменению забойного давления</a>
+<a class="side-fn" href="../../docs/f/FA_dPI.html" data-k="fa_dpi по изменению продуктивности потери добычи по факторам:" title="FA_dPI">По изменению продуктивности</a>
+<div class="side-sec">Потери добычи по факторам: › по изменению коэффициента продуктивности:</div>
+<a class="side-fn" href="../../docs/f/FA_dQ_k.html" data-k="fa_dq_k по изменению проницаемости потери добычи по факторам: › по изменению коэффициента продуктивности:" title="FA_dQ_k">По изменению проницаемости</a>
+<a class="side-fn" href="../../docs/f/FA_dQ_h.html" data-k="fa_dq_h по изменению эффективной толщины потери добычи по факторам: › по изменению коэффициента продуктивности:" title="FA_dQ_h">По изменению эффективной толщины</a>
+<a class="side-fn" href="../../docs/f/FA_dQ_Jd.html" data-k="fa_dq_jd по изменению безразмерного индекса продуктивности потери добычи по факторам: › по изменению коэффициента продуктивности:" title="FA_dQ_Jd">По изменению безразмерного индекса продуктивности</a>
+<div class="side-sec">Модель общего вида › a*b*c</div>
+<a class="side-fn" href="../../docs/f/FA_dF1_a.html" data-k="fa_df1_a по изменению параметра a модель общего вида › a*b*c" title="FA_dF1_a">По изменению параметра a</a>
+<a class="side-fn" href="../../docs/f/FA_dF1_b.html" data-k="fa_df1_b по изменению параметра b модель общего вида › a*b*c" title="FA_dF1_b">По изменению параметра b</a>
+<a class="side-fn" href="../../docs/f/FA_dF1_c.html" data-k="fa_df1_c по изменению параметра c модель общего вида › a*b*c" title="FA_dF1_c">По изменению параметра c</a>
+<div class="side-sec">Модель общего вида › a*b/c</div>
+<a class="side-fn" href="../../docs/f/FA_dF2_a.html" data-k="fa_df2_a по изменению параметра a модель общего вида › a*b/c" title="FA_dF2_a">По изменению параметра a</a>
+<a class="side-fn" href="../../docs/f/FA_dF2_b.html" data-k="fa_df2_b по изменению параметра b модель общего вида › a*b/c" title="FA_dF2_b">По изменению параметра b</a>
+<a class="side-fn" href="../../docs/f/FA_dF2_c.html" data-k="fa_df2_c по изменению параметра c модель общего вида › a*b/c" title="FA_dF2_c">По изменению параметра c</a>
+<div class="side-sec">Модель общего вида › a*b*c*d</div>
+<a class="side-fn" href="../../docs/f/FA_dF3_a.html" data-k="fa_df3_a по изменению параметра a модель общего вида › a*b*c*d" title="FA_dF3_a">По изменению параметра a</a>
+<a class="side-fn" href="../../docs/f/FA_dF3_b.html" data-k="fa_df3_b по изменению параметра b модель общего вида › a*b*c*d" title="FA_dF3_b">По изменению параметра b</a>
+<a class="side-fn" href="../../docs/f/FA_dF3_c.html" data-k="fa_df3_c по изменению параметра c модель общего вида › a*b*c*d" title="FA_dF3_c">По изменению параметра c</a>
+<a class="side-fn" href="../../docs/f/FA_dF3_d.html" data-k="fa_df3_d по изменению параметра d модель общего вида › a*b*c*d" title="FA_dF3_d">По изменению параметра d</a>
+</details>
+<details class="side-mod"><summary><span class="side-n">4</span>Газовый калькулятор</summary>
+<div class="side-sec">Дебит газа</div>
+<a class="side-fn" href="../../docs/f/Q_gas_Dipiu_Oilinj.html" data-k="q_gas_dipiu_oilinj по дюпюи для вертикальной скважины дебит газа" title="Q_gas_Dipiu_Oilinj">По Дюпюи для вертикальной скважины</a>
+<a class="side-fn" href="../../docs/f/Q_gas_Joshy_Oilinj.html" data-k="q_gas_joshy_oilinj по джоши для горизонтальной скважины дебит газа" title="Q_gas_Joshy_Oilinj">По Джоши для горизонтальной скважины</a>
+<div class="side-sec">Основные функции</div>
+<a class="side-fn" href="../../docs/f/Gas_koefz.html" data-k="gas_koefz коэффициент сверхсжимаемости основные функции" title="Gas_koefz">Коэффициент сверхсжимаемости</a>
+<a class="side-fn" href="../../docs/f/Gas_Tkr.html" data-k="gas_tkr псевдокритическая температура основные функции" title="Gas_Tkr">Псевдокритическая температура</a>
+<a class="side-fn" href="../../docs/f/Gas_Pkr.html" data-k="gas_pkr псевдокритическое давление основные функции" title="Gas_Pkr">Псевдокритическое давление</a>
+</details>
+<details class="side-mod" open><summary><span class="side-n">5</span>PVT-корреляции</summary>
+<div class="side-sec">Газпромнефть</div>
+<a class="side-fn" href="../../docs/f/RsGPN.html" data-k="rsgpn газосодержание нефти газпромнефть" title="RsGPN">Газосодержание нефти</a>
+<a class="side-fn" href="../../docs/f/DensGPN.html" data-k="densgpn плотность нефти газпромнефть" title="DensGPN">Плотность нефти</a>
+<a class="side-fn" href="../../docs/f/BoilGPN.html" data-k="boilgpn объемный коэффициент нефти газпромнефть" title="BoilGPN">Объемный коэффициент нефти</a>
+<a class="side-fn" href="../../docs/f/CoilGPN.html" data-k="coilgpn сжимаемость нефти газпромнефть" title="CoilGPN">Сжимаемость нефти</a>
+<a class="side-fn" href="../../docs/f/ViscoGPN.html" data-k="viscogpn вязкость нефти газпромнефть" title="ViscoGPN">Вязкость нефти</a>
+<a class="side-fn" href="../../docs/f/ViscoWGPN.html" data-k="viscowgpn вязкость воды газпромнефть" title="ViscoWGPN">Вязкость воды</a>
+<a class="side-fn" href="../../docs/f/DensWGPN.html" data-k="denswgpn плотность воды газпромнефть" title="DensWGPN">Плотность воды</a>
+<a class="side-fn" href="../../docs/f/BwGPN.html" data-k="bwgpn объёмный коэффициент воды газпромнефть" title="BwGPN">Объёмный коэффициент воды</a>
+<a class="side-fn" href="../../docs/f/CwGPN.html" data-k="cwgpn сжимаемость воды газпромнефть" title="CwGPN">Сжимаемость воды</a>
+<div class="side-sec">Standing / Standing (M)</div>
+<a class="side-fn" href="../../docs/f/PsatStand.html" data-k="psatstand давление насыщения нефти standing / standing (m)" title="PsatStand">Давление насыщения нефти</a>
+<a class="side-fn" href="../../docs/f/PsatStand_Mod.html" data-k="psatstand_mod давление насыщения нефти (m) standing / standing (m)" title="PsatStand_Mod">Давление насыщения нефти (M)</a>
+<a class="side-fn" href="../../docs/f/RsStand.html" data-k="rsstand газосодержание нефти standing / standing (m)" title="RsStand">Газосодержание нефти</a>
+<a class="side-fn" href="../../docs/f/RsStand_mod.html" data-k="rsstand_mod газосодержание нефти (m) standing / standing (m)" title="RsStand_mod">Газосодержание нефти (M)</a>
+<a class="side-fn" href="../../docs/f/DensStand.html" data-k="densstand плотность нефти standing / standing (m)" title="DensStand">Плотность нефти</a>
+<a class="side-fn" href="../../docs/f/BoilStand.html" data-k="boilstand объёмный коэффициент нефти standing / standing (m)" title="BoilStand">Объёмный коэффициент нефти</a>
+<a class="side-fn" href="../../docs/f/Visco1Stan.html" data-k="visco1stan вязкость дегазированной нефти standing / standing (m)" title="Visco1Stan">Вязкость дегазированной нефти</a>
+<div class="side-sec">Kartoatmojo</div>
+<a class="side-fn" href="../../docs/f/PsatKarto.html" data-k="psatkarto давление насыщения нефти kartoatmojo" title="PsatKarto">Давление насыщения нефти</a>
+<a class="side-fn" href="../../docs/f/RsKarto.html" data-k="rskarto газосодержание нефти kartoatmojo" title="RsKarto">Газосодержание нефти</a>
+<a class="side-fn" href="../../docs/f/BoilKart.html" data-k="boilkart объёмный коэффициент нефти kartoatmojo" title="BoilKart">Объёмный коэффициент нефти</a>
+<div class="side-sec">Kartoatmojo › Вязкость</div>
+<a class="side-fn" href="../../docs/f/Visco1Kart.html" data-k="visco1kart дегазированной нефти kartoatmojo › вязкость" title="Visco1Kart">Дегазированной нефти</a>
+<a class="side-fn" href="../../docs/f/Visco2Kart.html" data-k="visco2kart газонасыщенной нефти kartoatmojo › вязкость" title="Visco2Kart">Газонасыщенной нефти</a>
+<a class="side-fn" href="../../docs/f/Visco3Kart.html" data-k="visco3kart недонасыщенной нефти kartoatmojo › вязкость" title="Visco3Kart">Недонасыщенной нефти</a>
+<div class="side-sec">Clasco</div>
+<a class="side-fn" href="../../docs/f/PsatClaso.html" data-k="psatclaso давление насыщения нефти clasco" title="PsatClaso">Давление насыщения нефти</a>
+<a class="side-fn" href="../../docs/f/RsClaso.html" data-k="rsclaso газосодержание нефти clasco" title="RsClaso">Газосодержание нефти</a>
+<a class="side-fn" href="../../docs/f/BoilClasco.html" data-k="boilclasco объёмный коэффициент нефти clasco" title="BoilClasco">Объёмный коэффициент нефти</a>
+<div class="side-sec">Clasco › Вязкость нефти</div>
+<a class="side-fn" href="../../docs/f/Visco1Claso.html" data-k="visco1claso дегазированной clasco › вязкость нефти" title="Visco1Claso">Дегазированной</a>
+<a class="side-fn" href="../../docs/f/Visco2Claso.html" data-k="visco2claso газонасыщенной clasco › вязкость нефти" title="Visco2Claso">Газонасыщенной</a>
+<div class="side-sec">Al-Marhoun</div>
+<a class="side-fn" href="../../docs/f/PsatAlMaro.html" data-k="psatalmaro давление насыщения нефти al-marhoun" title="PsatAlMaro">Давление насыщения нефти</a>
+<a class="side-fn" href="../../docs/f/RsAlMaro.html" data-k="rsalmaro газосодержание нефти al-marhoun" title="RsAlMaro">Газосодержание нефти</a>
+<a class="side-fn" href="../../docs/f/BoilAl.html" data-k="boilal объёмный коэффициент нефти al-marhoun" title="BoilAl">Объёмный коэффициент нефти</a>
+<div class="side-sec">McCain</div>
+<a class="side-fn" href="../../docs/f/PsatMcCain.html" data-k="psatmccain давление насыщения нефти mccain" title="PsatMcCain">Давление насыщения нефти</a>
+<a class="side-fn" href="../../docs/f/RsMcCain.html" data-k="rsmccain газосодержание нефти mccain" title="RsMcCain">Газосодержание нефти</a>
+<a class="side-fn" href="../../docs/f/DensMcCain.html" data-k="densmccain плотность нефти mccain" title="DensMcCain">Плотность нефти</a>
+<div class="side-sec">Прочее › Вязкость по</div>
+<a class="side-fn" href="../../docs/f/ViscoAl.html" data-k="viscoal al-khafaji газонасыщенной/дегазированной/недонасыщенной нефти прочее › вязкость по" title="ViscoAl">Al-Khafaji газонасыщенной/дегазированной/недонасыщенной нефти</a>
+<a class="side-fn on" href="../../docs/f/ViscoBeal.html" data-k="viscobeal beal газонасыщенной/дегазированной/недонасыщенной нефти прочее › вязкость по" title="ViscoBeal">Beal газонасыщенной/дегазированной/недонасыщенной нефти</a>
+<a class="side-fn" href="../../docs/f/ViscoBergman.html" data-k="viscobergman bergman газонасыщенной/дегазированной нефти прочее › вязкость по" title="ViscoBergman">Bergman газонасыщенной/дегазированной нефти</a>
+<a class="side-fn" href="../../docs/f/ViscoDeGheto.html" data-k="viscodegheto de gheto газонасыщенной/недонасыщенной нефти прочее › вязкость по" title="ViscoDeGheto">De Gheto газонасыщенной/недонасыщенной нефти</a>
+<a class="side-fn" href="../../docs/f/Visco1Egbo.html" data-k="visco1egbo egbogah-jack&#x27;s дегазированной нефти прочее › вязкость по" title="Visco1Egbo">Egbogah-Jack&#x27;s дегазированной нефти</a>
+<a class="side-fn" href="../../docs/f/Visco1Hoss.html" data-k="visco1hoss hossain дегазированной нефти прочее › вязкость по" title="Visco1Hoss">Hossain дегазированной нефти</a>
+<div class="side-sec">Свойства породы › Сжимаемость порового коллектора</div>
+<a class="side-fn" href="../../docs/f/CorHall_compr.html" data-k="corhall_compr холла свойства породы › сжимаемость порового коллектора" title="CorHall_compr">Холла</a>
+<div class="side-sec">Свойства породы › Сжимаемость порового коллектора › Ньюмана</div>
+<a class="side-fn" href="../../docs/f/CorNewmancompr_csandst.html" data-k="cornewmancompr_csandst для консолидированного песчанника свойства породы › сжимаемость порового коллектора › ньюмана" title="CorNewmancompr_csandst">Для консолидированного песчанника</a>
+<a class="side-fn" href="../../docs/f/CorNewmancompr_limest.html" data-k="cornewmancompr_limest для консолидированного известняка свойства породы › сжимаемость порового коллектора › ньюмана" title="CorNewmancompr_limest">Для консолидированного известняка</a>
+<div class="side-sec">Свойства породы</div>
+<a class="side-fn" href="../../docs/f/ComprFr_Kot.html" data-k="comprfr_kot сжимаемость трещины (по методу котяхова) свойства породы" title="ComprFr_Kot">Сжимаемость трещины (по методу Котяхова)</a>
+<div class="side-sec">Вне ленты — через Мастер функций</div>
+<a class="side-fn" href="../../docs/f/CoilStand.html" data-k="coilstand сжимаемость нефти (standing) вне ленты — через мастер функций" title="CoilStand">Сжимаемость нефти (Standing)</a>
+<a class="side-fn" href="../../docs/f/CoilLabedi.html" data-k="coillabedi сжимаемость нефти (labedi) вне ленты — через мастер функций" title="CoilLabedi">Сжимаемость нефти (Labedi)</a>
+<a class="side-fn" href="../../docs/f/B_ob.html" data-k="b_ob объёмный коэффициент при давлении насыщения вне ленты — через мастер функций" title="B_ob">Объёмный коэффициент при давлении насыщения</a>
+<a class="side-fn" href="../../docs/f/Bg.html" data-k="bg объёмный коэффициент газа вне ленты — через мастер функций" title="Bg">Объёмный коэффициент газа</a>
+<a class="side-fn" href="../../docs/f/Cg.html" data-k="cg сжимаемость газа вне ленты — через мастер функций" title="Cg">Сжимаемость газа</a>
+<a class="side-fn" href="../../docs/f/Rsw.html" data-k="rsw газосодержание воды вне ленты — через мастер функций" title="Rsw">Газосодержание воды</a>
+<a class="side-fn" href="../../docs/f/Bmix.html" data-k="bmix объёмный коэффициент смеси вне ленты — через мастер функций" title="Bmix">Объёмный коэффициент смеси</a>
+<a class="side-fn" href="../../docs/f/WCrc.html" data-k="wcrc обводнённость в пластовых условиях вне ленты — через мастер функций" title="WCrc">Обводнённость в пластовых условиях</a>
+<a class="side-fn" href="../../docs/f/ZFactorDranchuk.html" data-k="zfactordranchuk z-фактор (дранчук–абу-касем) вне ленты — через мастер функций" title="ZFactorDranchuk">Z-фактор (Дранчук–Абу-Касем)</a>
+</details>
+<details class="side-mod"><summary><span class="side-n">6</span>Модели и корреляции ОФП</summary>
+<div class="side-sec">Основные функции</div>
+<a class="side-fn" href="../../docs/f/OFPFw.html" data-k="ofpfw фракционный поток основные функции" title="OFPFw">Фракционный поток</a>
+<a class="side-fn" href="../../docs/f/OFPEd.html" data-k="ofped коэффициент вытеснения основные функции" title="OFPEd">Коэффициент вытеснения</a>
+<div class="side-sec">Модель Corey</div>
+<a class="side-fn" href="../../docs/f/OFPCorW.html" data-k="ofpcorw фазовая по воде модель corey" title="OFPCorW">Фазовая по воде</a>
+<a class="side-fn" href="../../docs/f/OFPCorO.html" data-k="ofpcoro фазовая по нефти модель corey" title="OFPCorO">Фазовая по нефти</a>
+<div class="side-sec">Модель LET</div>
+<a class="side-fn" href="../../docs/f/OFPLetW.html" data-k="ofpletw фазовая по воде модель let" title="OFPLetW">Фазовая по воде</a>
+<a class="side-fn" href="../../docs/f/OFPLetO.html" data-k="ofpleto фазовая по нефти модель let" title="OFPLetO">Фазовая по нефти</a>
+<div class="side-sec">ОФП по капиллярному давлению</div>
+<a class="side-fn" href="../../docs/f/pc_krw.html" data-k="pc_krw фазовая по смачиваемой компоненте офп по капиллярному давлению" title="pc_krw">Фазовая по смачиваемой компоненте</a>
+<a class="side-fn" href="../../docs/f/pc_krnw.html" data-k="pc_krnw фазовая по несмачиваемой компоненте (н-в/г-н) офп по капиллярному давлению" title="pc_krnw">Фазовая по несмачиваемой компоненте (Н-В/Г-Н)</a>
+<a class="side-fn" href="../../docs/f/pc_kro.html" data-k="pc_kro фазовая по нефти (н-г) офп по капиллярному давлению" title="pc_kro">Фазовая по нефти (Н-Г)</a>
+<div class="side-sec">Корреляция Honarpour › для системы Нефть-Вода › для карбонатных пород</div>
+<a class="side-fn" href="../../docs/f/OFPHonw11.html" data-k="ofphonw11 фазовая по воде для гидрофильных пород корреляция honarpour › для системы нефть-вода › для карбонатных пород" title="OFPHonw11">Фазовая по воде для гидрофильных пород</a>
+<a class="side-fn" href="../../docs/f/OFPHonw12.html" data-k="ofphonw12 фазовая по воде для пород с промежуточной смачиваемостью корреляция honarpour › для системы нефть-вода › для карбонатных пород" title="OFPHonw12">Фазовая по воде для пород с промежуточной смачиваемостью</a>
+<a class="side-fn" href="../../docs/f/OFPHono1.html" data-k="ofphono1 фазовая по нефти корреляция honarpour › для системы нефть-вода › для карбонатных пород" title="OFPHono1">Фазовая по нефти</a>
+<div class="side-sec">Корреляция Honarpour › для системы Нефть-Вода › для терригенных пород</div>
+<a class="side-fn" href="../../docs/f/OFPHonw21.html" data-k="ofphonw21 фазовая по воде для гидрофильных пород корреляция honarpour › для системы нефть-вода › для терригенных пород" title="OFPHonw21">Фазовая по воде для гидрофильных пород</a>
+<a class="side-fn" href="../../docs/f/OFPHonw22.html" data-k="ofphonw22 фазовая по воде для пород с промежуточной смачиваемостью корреляция honarpour › для системы нефть-вода › для терригенных пород" title="OFPHonw22">Фазовая по воде для пород с промежуточной смачиваемостью</a>
+<a class="side-fn" href="../../docs/f/OFPHono2.html" data-k="ofphono2 фазовая по нефти корреляция honarpour › для системы нефть-вода › для терригенных пород" title="OFPHono2">Фазовая по нефти</a>
+<div class="side-sec">Корреляция Honarpour › для системы Нефть-Газ › для карбонатных пород</div>
+<a class="side-fn" href="../../docs/f/OFPHong1.html" data-k="ofphong1 фазовая по газу корреляция honarpour › для системы нефть-газ › для карбонатных пород" title="OFPHong1">Фазовая по газу</a>
+<a class="side-fn" href="../../docs/f/OFPHonog1.html" data-k="ofphonog1 фазовая по нефти корреляция honarpour › для системы нефть-газ › для карбонатных пород" title="OFPHonog1">Фазовая по нефти</a>
+<div class="side-sec">Корреляция Honarpour › для системы Нефть-Газ › для терригенных пород</div>
+<a class="side-fn" href="../../docs/f/OFPHong2.html" data-k="ofphong2 фазовая по газу корреляция honarpour › для системы нефть-газ › для терригенных пород" title="OFPHong2">Фазовая по газу</a>
+<a class="side-fn" href="../../docs/f/OFPHonog2.html" data-k="ofphonog2 фазовая по нефти корреляция honarpour › для системы нефть-газ › для терригенных пород" title="OFPHonog2">Фазовая по нефти</a>
+</details>
+<details class="side-mod"><summary><span class="side-n">7</span>Статистические инструменты</summary>
+<div class="side-sec">Основные функции</div>
+<a class="side-fn" href="../../docs/f/NormRasp.html" data-k="normrasp нормальное распределение основные функции" title="NormRasp">Нормальное распределение</a>
+<a class="side-fn" href="../../docs/f/LogNormRasp.html" data-k="lognormrasp логнормальное распределение основные функции" title="LogNormRasp">Логнормальное распределение</a>
+<a class="side-fn" href="../../docs/f/TriangRasp.html" data-k="triangrasp треугольное распределение основные функции" title="TriangRasp">Треугольное распределение</a>
+<a class="side-fn" href="../../docs/f/RandRasp.html" data-k="randrasp прямоугольное распределение основные функции" title="RandRasp">Прямоугольное распределение</a>
+</details>
+<details class="side-mod"><summary><span class="side-n">8</span>Вспомогательные функции</summary>
+<div class="side-sec">Основные функции</div>
+<a class="side-fn" href="../../docs/f/MVPR.html" data-k="mvpr модифицированный впр основные функции" title="MVPR">Модифицированный ВПР</a>
+<div class="side-sec">Вне ленты — через Мастер функций</div>
+<a class="side-fn" href="../../docs/f/IFM.html" data-k="ifm минимум по условию (минесли) вне ленты — через мастер функций" title="IFM">Минимум по условию (МИНЕСЛИ)</a>
+<a class="side-fn" href="../../docs/f/IFM2.html" data-k="ifm2 минимум по двум условиям вне ленты — через мастер функций" title="IFM2">Минимум по двум условиям</a>
+</details>
+</aside>
+<main class="docs-main"><nav class="docs-crumb"><a href="../index.html">Справочник</a><span>›</span><a href="../index.html#m-pvt">PVT-корреляции</a><span>›</span><span>Прочее › Вязкость по</span><span>›</span><b>Beal газонасыщенной/дегазированной/недонасыщенной нефти</b></nav>
+<header class="fn-head">
+  <div class="fn-kicker"><span class="side-n">5</span>PVT-корреляции</div>
+  <h1>Beal газонасыщенной/дегазированной/недонасыщенной нефти</h1>
+  <p class="fn-title"><code class="fn-code">ViscoBeal</code><span class="badge badge-fix">Изменено в v.0.31</span></p>
+  <p class="fn-sum">Корреляция Beal для вязкости газонасыщенной/дегазированной/недонасыщенной нефти, мПа*с</p>
+</header>
+<section class="d-block">
+  <h2 class="d-h2">Синтаксис</h2>
+  <div class="code-line"><code>=ViscoBeal(gamma_oil; Rs; mu; temp; Pressure; Pb)</code><button class="copy" data-copy="=ViscoBeal(gamma_oil; Rs; mu; temp; Pressure; Pb)">Копировать</button></div>
+  <p class="ribbon-path"><span class="rp-label">На ленте:</span> <span>Нефтяной инжиниринг v.0.31</span><i>›</i><span>PVT- корреляции</span><i>›</i><span>Прочее</span><i>›</i><span>Вязкость по</span><i>›</i><span>Beal газонасыщенной/дегазированной/недонасыщенной нефти</span></p>
+</section>
+<section class="d-block">
+  <h2 class="d-h2">Аргументы</h2>
+  <div class="table-wrap"><table class="args"><thead><tr><th class="num">#</th><th>Аргумент</th><th>Описание</th><th>Ед. изм.</th></tr></thead><tbody><tr><td class="num">1</td><td><code>gamma_oil</code></td><td>Относительная плотность нефти [0.85;0,9]</td><td class="unit">—</td></tr><tr><td class="num">2</td><td><code>Rs</code><span class=opt>необязательный</span></td><td>Газонасыщенность, м3/т [газонасыщенная]</td><td class="unit">—</td></tr><tr><td class="num">3</td><td><code>mu</code><span class=opt>необязательный</span></td><td>Вязкость дегаз. нефти, мПа*с [газонасыщенная/недонасыщенная]</td><td class="unit">—</td></tr><tr><td class="num">4</td><td><code>temp</code><span class=opt>необязательный</span></td><td>Температура, К [дегазированная]</td><td class="unit">—</td></tr><tr><td class="num">5</td><td><code>Pressure</code><span class=opt>необязательный</span></td><td>Давление, МПа [недонасыщенная]</td><td class="unit">—</td></tr><tr><td class="num">6</td><td><code>Pb</code><span class=opt>необязательный</span></td><td>Давление насыщения, МПа [недонасыщенная]</td><td class="unit">—</td></tr></tbody></table></div>
+  <p class="res-line"><b>Результат:</b> мПа*с.</p>
+</section>
+<section class="d-block"><h2 class="d-h2">Изменения в версии 0.31</h2><div class="chg"><ul class="notes"><li><b>Ошибки компиляции.</b> PVT: <a class="fnref" href="CorNewmancompr_limest.html">CorNewmancompr_limest</a> (лишний End Function); <a class="fnref" href="ViscoDeGheto.html">ViscoDeGheto</a>, <a class="fnref" href="ViscoAl.html">ViscoAl</a>, <a class="fnref" href="ViscoBeal.html">ViscoBeal</a>, <a class="fnref" href="ViscoBergman.html">ViscoBergman</a> (недостающие End If). Модуль PVT снова компилируется.</li></ul></div></section>
+
+<section class="d-block"><details class="src"><summary>Исходный код VBA · модуль PVT</summary><pre><code>Function ViscoBeal(gamma_oil As Double, _
+Optional Rs As Double, Optional mu As Double, Optional temp As Double, Optional Pressure As Double, _
+Optional Pb As Double)
+    If gamma_oil &lt;= 0.85 Then
+    a = 5.6146 * Rs * (0.000001235 * Rs - 0.00074)
+    B = 0.68 * 10 ^ (-0.00084 * Rs) + 0.25 * 10 ^ (-0.006176 * Rs) + 0.062 * 10 ^ (-0.02 * Rs)
+   ViscoBeal = 10 ^ a * mu ^ B
+&#x27;Beal дегазированная
+&#x27;средн.нефть(0.9&gt;gamma_oil&gt;0.85)
+&#x27;Function Visco1Beal(gamma_oil As Double, Temp As Double)
+Else
+    If gamma_oil &lt;= 0.9 And gamma_oil &gt; 0.85 Then
+    X = Exp(2.302585 * (0.43 + 8.33 / (141.5 / gamma_oil - 131.5)))
+   ViscoBeal = (0.32 + 1.8 * 10 ^ 7 / (141.5 / gamma_oil - 131.5) ^ 4.53) * (360 / ((temp - 273) * 1.8 + 232)) ^ X
+&#x27;Beal недонасыщенная
+&#x27;сред. нефть (0,9&gt;gamma_oil0,85)
+&#x27;Function Visco3Beal(gamma_oil As Double, mu As Double, Pressure As Double, Pb As Double)
+        If Pressure &gt; Pb Then
+        a = (0.001 * 145.041 * (Pressure - Pb) * (0.024 * mu ^ 1.6 + 0.038 * mu ^ 0.56))
+        ViscoBeal = mu + a
+        End If
+    End If
+    End If
+End Function</code></pre></details></section>
+<section class="d-block"><h2 class="d-h2">Связанные функции</h2><div class="rel-grid"><a class="rel" href="ViscoAl.html"><b>Al-Khafaji газонасыщенной/дегазированной/недонасыщенной нефти</b><code>ViscoAl</code></a><a class="rel" href="ViscoBergman.html"><b>Bergman газонасыщенной/дегазированной нефти</b><code>ViscoBergman</code></a><a class="rel" href="ViscoDeGheto.html"><b>De Gheto газонасыщенной/недонасыщенной нефти</b><code>ViscoDeGheto</code></a><a class="rel" href="Visco1Egbo.html"><b>Egbogah-Jack&#x27;s дегазированной нефти</b><code>Visco1Egbo</code></a><a class="rel" href="Visco1Hoss.html"><b>Hossain дегазированной нефти</b><code>Visco1Hoss</code></a></div></section>
+<nav class="pn"><a href="ViscoAl.html" class="pn-prev"><small>← Предыдущая</small><b>Al-Khafaji газонасыщенной/дегазированной/недонасыщенной нефти</b><code>ViscoAl</code></a><a href="ViscoBergman.html" class="pn-next"><small>Следующая →</small><b>Bergman газонасыщенной/дегазированной нефти</b><code>ViscoBergman</code></a></nav>
+</main></div>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../../index.html" class="brand"><img src="../../assets/img/logo-mark.svg" alt=""><span class="brand-word">Reservoir<b>Engineering</b>Lab</span></a>
+        <p>Нефтяной инжиниринг — надстройка для Excel с расчётными функциями для инженеров по разработке месторождений.</p>
+      </div>
+      <div class="footer-col"><h5>Справочник</h5><ul><li><a href="../../docs/index.html#m-rates">Дебит скважины</a></li><li><a href="../../docs/index.html#m-forecast">Прогноз добычи</a></li><li><a href="../../docs/index.html#m-analysis">Анализ добычи</a></li><li><a href="../../docs/index.html#m-gas">Газовый калькулятор</a></li><li><a href="../../docs/index.html#m-pvt">PVT-корреляции</a></li><li><a href="../../docs/index.html#m-ofp">Модели и корреляции ОФП</a></li><li><a href="../../docs/tools.html">Инструменты на ленте</a></li></ul></div>
+      <div class="footer-col"><h5>Надстройка</h5><ul>
+        <li><a href="../../release.html">Последняя версия v.0.31</a></li>
+        <li><a href="../../release.html#install">Установка</a></li>
+        <li><a href="../../release.html#changes">Что нового</a></li>
+        <li><a href="../../release.html#archive">Архив версий</a></li>
+        <li><a href="mailto:naugolnov.mv@gazprom-neft.ru?subject=%D0%9D%D0%B5%D1%84%D1%82%D1%8F%D0%BD%D0%BE%D0%B9%20%D0%B8%D0%BD%D0%B6%D0%B8%D0%BD%D0%B8%D1%80%D0%B8%D0%BD%D0%B3%20v.0.31">Написать разработчику</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2016–2019, 2026 · Нефтяной инжиниринг · Михаил Наугольнов</span><span>Надстройка oilinj2026.xlam · v.0.31 от 26.09.2026</span></div>
+  </div>
+</footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/docs.js"></script>
+</body>
+</html>
